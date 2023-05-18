@@ -67,6 +67,9 @@ export class Auth {
     const headers = { ...reqBodyHeaders, ...config?.headers };
     if (reqBody == null || Object.keys(reqBody).length === 0)
       throw new Error("request body is required");
+    headers[
+      "user-agent"
+    ] = `speakeasy-sdk/${this._language} ${this._sdkVersion} ${this._genVersion}`;
 
     const httpRes: AxiosResponse = await client.request({
       validateStatus: () => true,
@@ -125,10 +128,16 @@ export class Auth {
       security
     );
 
+    const headers = { ...config?.headers };
+    headers[
+      "user-agent"
+    ] = `speakeasy-sdk/${this._language} ${this._sdkVersion} ${this._genVersion}`;
+
     const httpRes: AxiosResponse = await client.request({
       validateStatus: () => true,
       url: url,
       method: "post",
+      headers: headers,
       ...config,
     });
 
