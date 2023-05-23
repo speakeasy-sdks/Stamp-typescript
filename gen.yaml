@@ -2,8 +2,8 @@ configVersion: 1.0.0
 management:
   docChecksum: a9635a60db446a981efe3073430cff35
   docVersion: 1.0.0
-  speakeasyVersion: 1.35.0
-  generationVersion: 2.31.0
+  speakeasyVersion: 1.37.5
+  generationVersion: 2.32.2
 generation:
   comments:
     disableComments: false
@@ -14,7 +14,7 @@ generation:
   tagNamespacingDisabled: false
   telemetryEnabled: false
 typescript:
-  version: 1.4.0
+  version: 1.5.0
   author: Stamp
   maxMethodParams: 0
   packageName: StampApi
