@@ -7,25 +7,25 @@ import * as shared from "../shared";
 import { AxiosResponse } from "axios";
 
 export class RefreshTokenSecurity extends SpeakeasyBase {
-  @SpeakeasyMetadata({
-    data: "security, scheme=true;type=http;subtype=bearer;name=Authorization",
-  })
-  jwt: string;
+    @SpeakeasyMetadata({
+        data: "security, scheme=true;type=http;subtype=bearer;name=Authorization",
+    })
+    jwt: string;
 }
 
 export class RefreshTokenResponse extends SpeakeasyBase {
-  @SpeakeasyMetadata()
-  contentType: string;
+    @SpeakeasyMetadata()
+    contentType: string;
 
-  /**
-   * Refresh Sucessful
-   */
-  @SpeakeasyMetadata()
-  refreshTokenResponse?: shared.RefreshTokenResponse;
+    /**
+     * Refresh Sucessful
+     */
+    @SpeakeasyMetadata()
+    refreshTokenResponse?: shared.RefreshTokenResponse;
 
-  @SpeakeasyMetadata()
-  statusCode: number;
+    @SpeakeasyMetadata()
+    statusCode: number;
 
-  @SpeakeasyMetadata()
-  rawResponse?: AxiosResponse;
+    @SpeakeasyMetadata()
+    rawResponse?: AxiosResponse;
 }

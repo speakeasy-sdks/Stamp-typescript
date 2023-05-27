@@ -9,19 +9,19 @@ import { Expose } from "class-transformer";
  * Create a new post
  */
 export class PostPostRequest extends SpeakeasyBase {
-  @SpeakeasyMetadata()
-  @Expose({ name: "description" })
-  description: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "description" })
+    description: string;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "link" })
-  link: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "link" })
+    link: string;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "rootDomain" })
-  rootDomain: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "rootDomain" })
+    rootDomain: string;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "title" })
-  title: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "title" })
+    title: string;
 }

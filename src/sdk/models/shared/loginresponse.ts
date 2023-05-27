@@ -9,7 +9,7 @@ import { Expose } from "class-transformer";
  * login sucessful
  */
 export class LogInResponse extends SpeakeasyBase {
-  @SpeakeasyMetadata()
-  @Expose({ name: "jwt" })
-  jwt: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "jwt" })
+    jwt: string;
 }

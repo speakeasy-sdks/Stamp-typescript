@@ -9,7 +9,7 @@ import { Expose } from "class-transformer";
  * Refresh Sucessful
  */
 export class RefreshTokenResponse extends SpeakeasyBase {
-  @SpeakeasyMetadata()
-  @Expose({ name: "jwt" })
-  jwt: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "jwt" })
+    jwt: string;
 }

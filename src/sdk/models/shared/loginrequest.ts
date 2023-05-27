@@ -9,11 +9,11 @@ import { Expose } from "class-transformer";
  * request body for signing up and logging in. Specify one of the currently supported authProviders ['github'] and accessToken for the auth provider
  */
 export class LogInRequest extends SpeakeasyBase {
-  @SpeakeasyMetadata()
-  @Expose({ name: "accessToken" })
-  accessToken: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "accessToken" })
+    accessToken: string;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "authProvider" })
-  authProvider: string;
+    @SpeakeasyMetadata()
+    @Expose({ name: "authProvider" })
+    authProvider: string;
 }

@@ -10,16 +10,16 @@ import { Expose, Type } from "class-transformer";
  * successful
  */
 export class PostResultSet extends SpeakeasyBase {
-  @SpeakeasyMetadata()
-  @Expose({ name: "count" })
-  count: number;
+    @SpeakeasyMetadata()
+    @Expose({ name: "count" })
+    count: number;
 
-  @SpeakeasyMetadata()
-  @Expose({ name: "pageSize" })
-  pageSize: number;
+    @SpeakeasyMetadata()
+    @Expose({ name: "pageSize" })
+    pageSize: number;
 
-  @SpeakeasyMetadata({ elemType: Post })
-  @Expose({ name: "posts" })
-  @Type(() => Post)
-  posts: Post[];
+    @SpeakeasyMetadata({ elemType: Post })
+    @Expose({ name: "posts" })
+    @Type(() => Post)
+    posts: Post[];
 }

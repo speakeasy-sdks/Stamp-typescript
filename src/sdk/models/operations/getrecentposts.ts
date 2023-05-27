@@ -7,34 +7,32 @@ import * as shared from "../shared";
 import { AxiosResponse } from "axios";
 
 export class GetRecentPostsRequest extends SpeakeasyBase {
-  /**
-   * Guid of the last fetched item, used to retrive next batch of postings. Empty will return the first page.
-   */
-  @SpeakeasyMetadata({
-    data: "queryParam, style=form;explode=true;name=lastFetchedItemId",
-  })
-  lastFetchedItemId?: string;
+    /**
+     * Guid of the last fetched item, used to retrive next batch of postings. Empty will return the first page.
+     */
+    @SpeakeasyMetadata({ data: "queryParam, style=form;explode=true;name=lastFetchedItemId" })
+    lastFetchedItemId?: string;
 
-  /**
-   * Number of results are included in a page
-   */
-  @SpeakeasyMetadata({ data: "queryParam, style=form;explode=true;name=size" })
-  size?: number;
+    /**
+     * Number of results are included in a page
+     */
+    @SpeakeasyMetadata({ data: "queryParam, style=form;explode=true;name=size" })
+    size?: number;
 }
 
 export class GetRecentPostsResponse extends SpeakeasyBase {
-  @SpeakeasyMetadata()
-  contentType: string;
+    @SpeakeasyMetadata()
+    contentType: string;
 
-  /**
-   * successful
-   */
-  @SpeakeasyMetadata()
-  postResultSet?: shared.PostResultSet;
+    /**
+     * successful
+     */
+    @SpeakeasyMetadata()
+    postResultSet?: shared.PostResultSet;
 
-  @SpeakeasyMetadata()
-  statusCode: number;
+    @SpeakeasyMetadata()
+    statusCode: number;
 
-  @SpeakeasyMetadata()
-  rawResponse?: AxiosResponse;
+    @SpeakeasyMetadata()
+    rawResponse?: AxiosResponse;
 }

@@ -7,25 +7,25 @@ import * as shared from "../shared";
 import { AxiosResponse } from "axios";
 
 export class CreatePostSecurity extends SpeakeasyBase {
-  @SpeakeasyMetadata({
-    data: "security, scheme=true;type=http;subtype=bearer;name=Authorization",
-  })
-  jwt: string;
+    @SpeakeasyMetadata({
+        data: "security, scheme=true;type=http;subtype=bearer;name=Authorization",
+    })
+    jwt: string;
 }
 
 export class CreatePostResponse extends SpeakeasyBase {
-  @SpeakeasyMetadata()
-  contentType: string;
+    @SpeakeasyMetadata()
+    contentType: string;
 
-  /**
-   * post created
-   */
-  @SpeakeasyMetadata()
-  post?: shared.Post;
+    /**
+     * post created
+     */
+    @SpeakeasyMetadata()
+    post?: shared.Post;
 
-  @SpeakeasyMetadata()
-  statusCode: number;
+    @SpeakeasyMetadata()
+    statusCode: number;
 
-  @SpeakeasyMetadata()
-  rawResponse?: AxiosResponse;
+    @SpeakeasyMetadata()
+    rawResponse?: AxiosResponse;
 }
