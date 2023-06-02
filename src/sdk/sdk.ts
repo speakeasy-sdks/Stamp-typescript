@@ -39,8 +39,8 @@ export class StampApi {
     public _securityClient: AxiosInstance;
     public _serverURL: string;
     private _language = "typescript";
-    private _sdkVersion = "1.6.0";
-    private _genVersion = "2.34.2";
+    private _sdkVersion = "1.6.1";
+    private _genVersion = "2.34.7";
     private _globals: any;
 
     constructor(props?: SDKProps) {
