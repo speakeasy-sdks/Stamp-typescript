@@ -38,8 +38,8 @@ export class SDKConfiguration {
     serverURL: string;
     serverDefaults: any;
     language = "typescript";
-    sdkVersion = "1.7.0";
-    genVersion = "2.35.3";
+    sdkVersion = "1.7.1";
+    genVersion = "2.35.9";
 
     public constructor(init?: Partial<SDKConfiguration>) {
         Object.assign(this, init);
@@ -47,7 +47,7 @@ export class SDKConfiguration {
 }
 
 /**
- * Stamp API
+ * Stamp API: Stamp API
  *
  * @see {@link https://swagger.io/specification/} - Find out more about Open API specification
  */
