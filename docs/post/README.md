@@ -23,7 +23,7 @@ sdk.post.createPost({
   rootDomain: "corrupti",
   title: "Dr.",
 }, {
-  jwt: "YOUR_BEARER_TOKEN_HERE",
+  jwt: "",
 }).then((res: CreatePostResponse) => {
   if (res.statusCode == 200) {
     // handle response

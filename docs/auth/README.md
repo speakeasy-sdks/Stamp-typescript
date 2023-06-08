@@ -40,7 +40,7 @@ import { RefreshTokenResponse } from "StampApi/dist/sdk/models/operations";
 const sdk = new StampApi();
 
 sdk.auth.refreshToken({
-  jwt: "YOUR_BEARER_TOKEN_HERE",
+  jwt: "",
 }).then((res: RefreshTokenResponse) => {
   if (res.statusCode == 200) {
     // handle response
