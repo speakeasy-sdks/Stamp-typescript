@@ -1,0 +1,9 @@
+# GetRecentPostsRequest
+
+
+## Fields
+
+| Field                                                                                                    | Type                                                                                                     | Required                                                                                                 | Description                                                                                              |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `lastFetchedItemId`                                                                                      | *string*                                                                                                 | :heavy_minus_sign:                                                                                       | Guid of the last fetched item, used to retrive next batch of postings. Empty will return the first page. |
+| `size`                                                                                                   | *number*                                                                                                 | :heavy_minus_sign:                                                                                       | Number of results are included in a page                                                                 |

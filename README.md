@@ -39,15 +39,15 @@ sdk.auth.logIn({
 ## Available Resources and Operations
 
 
-### [auth](docs/auth/README.md)
+### [auth](docs/sdks/auth/README.md)
 
-* [logIn](docs/auth/README.md#login) - log in or sign up to stamp with an external auth provider
-* [refreshToken](docs/auth/README.md#refreshtoken) - exchange token in header for a new one
+* [logIn](docs/sdks/auth/README.md#login) - log in or sign up to stamp with an external auth provider
+* [refreshToken](docs/sdks/auth/README.md#refreshtoken) - exchange token in header for a new one
 
-### [post](docs/post/README.md)
+### [post](docs/sdks/post/README.md)
 
-* [createPost](docs/post/README.md#createpost) - create a new post
-* [getRecentPosts](docs/post/README.md#getrecentposts) - get a list of most recent posts
+* [createPost](docs/sdks/post/README.md#createpost) - create a new post
+* [getRecentPosts](docs/sdks/post/README.md#getrecentposts) - get a list of most recent posts
 <!-- End SDK Available Operations -->
 
 ### Maturity
